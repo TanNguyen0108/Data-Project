@@ -38,5 +38,10 @@ The project relies on the following dependencies:
 - PyQt5: Used for developing the graphical user interface.
 Make sure to install these dependencies before running the project.
 
+## Results
+
+![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/bf0a923b-34f7-4fd3-a5bd-32fc70b80e41)
+
+
 ## Contributions
 Contributions to the project are welcome. If you encounter any issues or have suggestions for improvements, please create a new issue or submit a pull request.
