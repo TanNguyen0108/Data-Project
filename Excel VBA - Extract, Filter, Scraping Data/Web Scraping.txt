@@ -1,0 +1,105 @@
+Option Explicit
+    Public IE As New SHDocVw.InternetExplorer
+    Public HTMLDoc As MSHTML.HTMLDocument
+    Public HTMLInput As MSHTML.IHTMLElement
+    Public HTMLAs As MSHTML.IHTMLElementCollection
+    Public HTMLA As MSHTML.IHTMLElement
+    Public HTMLBs As MSHTML.IHTMLElementCollection
+    Public HTMLB As MSHTML.IHTMLElement
+    Public IE2 As New SHDocVw.InternetExplorer
+    Public href_number As Integer
+    Public inner_number As Integer
+    
+Sub BrowseToExchangeRates()
+    
+    Dim j As Integer
+    
+    IE.Visible = True
+    IE.navigate "https://woodforgood.com/case-studies/"
+    
+    Do While IE.readyState <> READYSTATE_COMPLETE
+    Loop
+    
+    Set HTMLDoc = IE.document
+    
+    Set HTMLAs = HTMLDoc.getElementsByTagName("a")
+    
+    j = 1
+    
+    For Each HTMLA In HTMLAs
+    
+        Worksheets("Sheet3").Range("A" & j) = HTMLA.getAttribute("href")
+        
+           ' Call detail
+    j = j + 1
+    Next HTMLA
+        
+    Worksheets("Sheet3").Columns("A:A").Select
+    ActiveSheet.Range("$A$1:$A$77").RemoveDuplicates Columns:=1, Header:=xlNo
+        
+    href_number = WorksheetFunction.CountA(Worksheets("Sheet3").Columns("A"))
+       
+    IE.Visible = False
+    
+End Sub
+
+Sub detail()
+
+    Dim i, j As Integer
+    
+    For i = 18 To 29
+    
+        Worksheets("Sheet3").Columns("H:H").ClearContents
+
+        IE2.Visible = True
+        IE2.navigate Worksheets("Sheet3").Range("A" & i)
+    
+        Do While IE2.readyState <> READYSTATE_COMPLETE
+        Loop
+    
+        Set HTMLDoc = IE2.document
+    
+        Set HTMLBs = HTMLDoc.getElementsByTagName("p")
+    
+        j = 1
+        For Each HTMLB In HTMLBs
+    
+            Worksheets("Sheet3").Range("H" & j) = HTMLB.innerText
+         
+        j = j + 1
+        Next HTMLB
+        
+        Sheets("Sheet3").Select
+        Worksheets("Sheet3").Columns("H:H").Select
+        Selection.SpecialCells(xlCellTypeBlanks).Select
+        Selection.Delete Shift:=xlUp
+        inner_number = WorksheetFunction.CountA(Worksheets("Sheet3").Columns("A"))
+        
+        Call scanning_req
+        
+        'Final result
+            
+            Sheets("Sheet2").Select
+            Range("A2:O2").Copy
+            Worksheets("Sheet2").Range("A" & i - 13).Select
+            ActiveSheet.Paste
+
+    Next i
+End Sub
+
+Sub scanning_req()
+
+Dim i, j As Integer
+
+For i = 1 To 8
+
+    For j = 1 To inner_number
+        'Debug.Print Worksheets("Sheet3").Range("H" & j), Worksheets("Sheet2").Cells(1, i)
+        If Worksheets("Sheet3").Range("H" & j) = Worksheets("Sheet2").Cells(1, i) Then
+           Worksheets("Sheet2").Cells(2, i) = Worksheets("Sheet3").Range("H" & j + 1)
+            Exit For
+        End If
+    Next j
+Next i
+End Sub
+
