@@ -66,6 +66,10 @@ The data cleansing process will include removing duplicates to eliminate redunda
 
 ![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/4dc9db5b-d3f8-4c88-9767-5065a16b4fad)
 
+## Design Database and ERD Diagram
+
+![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/42b9beb4-059e-4008-be2d-fdb541127e09)
+
 
 ## Statistics
 
