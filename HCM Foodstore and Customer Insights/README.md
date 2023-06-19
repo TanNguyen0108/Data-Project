@@ -73,7 +73,7 @@ Link drive for database SQLite: https://drive.google.com/file/d/1hiOj_HTp-p7HL3D
 ![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/8fca9ba4-809d-4a1a-b8ea-97be9e34ffd9)
 
 ## Visualization:
-- We create [Power BI](https://app.powerbi.com/groups/me/reports/1925003b-32bb-463b-b593-7d7307fd9810?ctid=40127cd4-45f3-49a3-b05d-315a43a9f033&pbi_source=linkShare&bookmarkGuid=f9b5fb9e-dd14-4c96-a3f6-ca390ce32da8) ( [Power BI file](https://drive.google.com/file/d/1qWlmexHhkaAQj391D9NMRutz9Boj3MvC/view?usp=share_link) if my account expires) dashboard to help user find the dish they like by dish name or the address they are in.
+- We create [Power BI file]([https://drive.google.com/file/d/1qWlmexHhkaAQj391D9NMRutz9Boj3MvC/view?usp=share_link](https://drive.google.com/file/d/16v7VM8s0jFJDx2CiCbRWZdygiC5mD5Tz/view?usp=drive_link)) dashboard to help user find the dish they like by dish name or the address they are in.
 
 ![image](https://user-images.githubusercontent.com/55779400/220550393-48be7dc2-479f-40b0-85cf-0f487960cad6.png)
 
