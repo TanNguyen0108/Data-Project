@@ -30,7 +30,9 @@ Statistics: Utilizing statistical methods and techniques to extract meaningful p
 ## Python Mining Data
 
 Please refer this for details: [Python for Web scraping](https://github.com/TanNguyen0108/Data-Project/tree/main/Python%20-%20Web%20scraping)
+
 [Python data mining in restaurant project](https://github.com/TanNguyen0108/Data-Project/tree/main/HCM%20Foodstore%20and%20Customer%20Insights/Python%20-%20Data%20Crawling)
+
 Using Requests calling API of search page
 Using Requests.get() call API, and json_normalize to transform json result into Pandas table
 Using MultiThreading to speed-up the process. (close to 130K results)
