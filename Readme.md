@@ -1,4 +1,4 @@
-# This is Tan Self-project repository
+# This is Tan Nguyen Self-project repository
 
 ## Description
 
@@ -26,6 +26,16 @@ Statistics: Utilizing statistical methods and techniques to extract meaningful p
 - Data cleansing
 - Statistics
 - Export PDF result
+
+## Python Mining Data
+
+Please refer this for details: [Python for Web scraping](https://github.com/TanNguyen0108/Data-Project/tree/main/Python%20-%20Web%20scraping)
+[Python data mining in restaurant project](https://github.com/TanNguyen0108/Data-Project/tree/main/HCM%20Foodstore%20and%20Customer%20Insights/Python%20-%20Data%20Crawling)
+Using Requests calling API of search page
+Using Requests.get() call API, and json_normalize to transform json result into Pandas table
+Using MultiThreading to speed-up the process. (close to 130K results)
+![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/25f8f611-96bf-46b9-bf1c-089a35a9ccd9)
+
 
 ## Build Tool by GUI
 
