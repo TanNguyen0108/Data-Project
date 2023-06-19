@@ -76,3 +76,18 @@ By leveraging these statistical analysis techniques, this project ensures rigoro
 ## Export PDF result
 
 Using fpdf library to export PDF results. [PDF Results](https://github.com/TanNguyen0108/Data-Project/blob/main/Machine%20Tolerance%20Data%20Analyzing%20for%20Batch%20Manufacturing/Report%20Results.pdf)
+
+
+## Data-Visualisation-Using-R
+
+Data-Visualisation-Using-R
+![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/32cf27a7-df2c-46cd-9830-9714c94699d8)
+![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/6176a627-12c8-47dc-8e7b-f429e70b0093)
+![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/1d538c48-c2b4-4183-b20b-ce1546f3586b)
+![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/e44ab9d1-177b-43d3-973d-ebd953736dd6)
+![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/756f5717-aa6c-456f-afc8-a2aaed328f64)
+![image](https://github.com/TanNguyen0108/Data-Project/assets/109364182/f921ee78-1ca3-4f11-b5d4-fd02c0b11da5)
+
+
+
+
