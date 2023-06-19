@@ -19,11 +19,6 @@ Link drive for database SQLite: https://drive.google.com/file/d/1hiOj_HTp-p7HL3D
 - <ins>**Result**</ins>: A table contains 319.378 rows and 64 columns.
    
 ![image](https://user-images.githubusercontent.com/55779400/220302474-eddd8bfc-079b-4321-953f-05fe92676b1e.png)
-## Crawl ShopeeFood App:
-### Get API of ShoopeeFood App: [Reference](https://www.xbyte.io/how-to-scrape-data-from-mobile-apps.php)
-- Get APIs using Android Virtual Device like [Android Developer Studio](https://developer.android.com/studio/) and HTTPS proxy like [Mitmproxy](https://mitmproxy.org/) 
-- Use [Appium](https://appium.io/) to control the Virtual Android.
-- <ins>**Result**</ins>: Some API of ShopeeFood.
 
 ### Extract Restaurant IDs:
 - Using [Nominatim](https://nominatim.org/) to get a grid of longtitudes and lattitudes of HCM city like: 
